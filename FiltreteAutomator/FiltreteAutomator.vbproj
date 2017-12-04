@@ -132,6 +132,7 @@
     <Content Include="CurrentWeatherFW2samp.txt" />
     <Content Include="CurrentWeatherFW3samp.txt" />
     <Content Include="CurrentWeatherFWsamp.txt" />
+    <Content Include="ScreenShot.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
