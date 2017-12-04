@@ -84,7 +84,7 @@ Public Class Filtrete
         Dim sr As System.IO.StringReader = Nothing
         Dim fr As StreamReader
         Try
-            's = s.Replace("<?xml version=""""1.0"""" encoding=""""UTF-8""""?>"" & vbLf & """, "") 'this didn't work
+            's = s.Replace("<?xml version=""""1.0"""" encoding=""""UTF-8""""?>"" & vbLf & """, "") 'this didn't work.
             's = s.Replace("""""", "")
             sr = New System.IO.StringReader(sXml)
             'xs = Xml.Serialization.XmlSerializer(GetType(CurrentWeather.current))
