@@ -328,13 +328,13 @@
  System.Xml.Serialization.XmlTypeAttribute(AnonymousType:=True)>
     Partial Public Class currentHumidity
 
-        Private valueField As Byte
+        Private valueField As Decimal
 
         Private unitField As String
 
         '''<remarks/>
         <System.Xml.Serialization.XmlAttributeAttribute()>
-        Public Property value() As Byte
+        Public Property value() As Decimal
             Get
                 Return Me.valueField
             End Get
@@ -437,7 +437,7 @@
  System.Xml.Serialization.XmlTypeAttribute(AnonymousType:=True)>
     Partial Public Class currentWindSpeed
 
-        Private valueField As Decimal
+        Private valueField As Decimal 'Got error at 2,429: "value="280"" expanded: <wind><speed value="5.82" name="Moderate breeze"></speed><gusts></gusts><direction value="280"
 
         Private nameField As String
 
@@ -490,7 +490,7 @@
  System.Xml.Serialization.XmlTypeAttribute(AnonymousType:=True)>
     Partial Public Class currentWindDirection
 
-        Private valueField As Byte
+        Private valueField As Decimal 'December 6 2017 changed from byte to Decimal for error. 2, 426
 
         Private codeField As String
 
@@ -498,7 +498,7 @@
 
         '''<remarks/>
         <System.Xml.Serialization.XmlAttributeAttribute()>
-        Public Property value() As Byte
+        Public Property value() As Decimal
             Get
                 Return Me.valueField
             End Get
@@ -536,13 +536,13 @@
  System.Xml.Serialization.XmlTypeAttribute(AnonymousType:=True)>
     Partial Public Class currentClouds
 
-        Private valueField As Byte
+        Private valueField As Decimal
 
         Private nameField As String
 
         '''<remarks/>
         <System.Xml.Serialization.XmlAttributeAttribute()>
-        Public Property value() As Byte
+        Public Property value() As Decimal
             Get
                 Return Me.valueField
             End Get

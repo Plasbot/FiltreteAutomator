@@ -20,7 +20,7 @@ Public Class Filtrete
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.FTError, AddressOf Me.FTErrorHandler
         Me.MyThermoStatus = New ThermoStatus
-        Me.OutsideLowTempThreshold = 50
+        Me.OutsideLowTempThreshold = 54
 
         AddHandler Me.MyThermoStatus.TSError, AddressOf Me.FTErrorHandler
         AddHandler Me.MyThermoStatus.TSUpdated, AddressOf Me.ThermoStatusUpdateHandler
